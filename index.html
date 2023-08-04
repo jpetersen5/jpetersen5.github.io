@@ -3,39 +3,73 @@
 <head>
     <title>Jason Petersen - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Jason Petersen</h1>
-        <p>Placeholder</p>
+        <div class="header-content">
+            <h1>Jason Petersen</h1>
+            <div class="social-icons">
+                <a href="https://github.com/jpetersen5" target="_blank"><i class="fab fa-github"></i><span class="username"> jpetersen5</span></a>
+                <a href="https://linkedin.com/in/jason-t-petersen" target="_blank"><i class="fab fa-linkedin"></i><span class="username"> jason-t-petersen</span></a>
+            </div>
+        </div>
+        <p>University of California, Merced '23  -  BS Computer Science & Engineering</p>
         <nav>
-            <a href="#about">About Me</a> |
-            <a href="#portfolio">Portfolio</a> |
-            <a href="#contact">Contact Me</a>
+            <a class="nav-button" href="#about">About Me</a>
+            <a class="nav-button" href="#portfolio">Portfolio</a>
+            <a class="nav-button" href="#contact">Contact Me</a>
         </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Placeholder</p>
+        <div class="about-content">
+            <p>I'm a passionate software developer with interests in game development, music, AI, and software for creative purposes in general. I've primarily worked with C++ and Python but know my way around C, MATLAB, Lua, Java, and JavaScript (alongside all the other web dev tools). Here you can find some of the larger work I've done, or you can visit my <a href="https://github.com/jpetersen5/school-projects" target="_blank">college work repository</a> where I've uploaded all my past projects and labs for courses I've taken.</p>
+            <img src="https://raw.githubusercontent.com/jpetersen5/jpetersen5.github.io/main/src/images/self.png" alt="Jason Petersen">
+        </div>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
+        <a class="prev-button" id="prev">&#10094;</a>
+        <a class="next-button" id="next">&#10095;</a>
         <div class="project">
-            <h3>Project Title</h3>
-            <p>Placeholder</p>
-            <a href="#">Link to project</a>
+            <h3><a href="paint3D.html">Paint 3D Game Objects Using Generative AI</a></h3>
+            <div class="project-content">
+                <p>In partnership with OpenAvenues and Hypothetic, I utilized ControlNet generative AI models to automatically texture 3D objects. The project's Python Notebook can be found <a href="https://colab.research.google.com/drive/165ohPAEUqfsVShgEVJaYz6X1zz7Iw3Kj?usp=sharing" target="_blank">here</a> hosted on Google's CoLab.</p>
+                <img src="https://raw.githubusercontent.com/jpetersen5/jpetersen5.github.io/main/src/images/cow.gif" alt="Painting 3D Objects">
+            </div>
+        </div>
+        <div class="project">
+            <h3><a href="#">SeeDetector</a></h3>
+            <div class="project-content">
+                <img src="https://raw.githubusercontent.com/jpetersen5/jpetersen5.github.io/main/src/images/seeds%20preview.png" alt="SeeDetector Preview">
+                <p>As part of my college capstone project in partnership with Innovate to Grow and a team of four others, I led design and programming for a seedling counting tool for California Transplants located in Newman, California. It was built in Python and utilized the OpenCV library to process images captured by a camera placed above a seedling tray.</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3><a href="#">Bricked</a></h3>
+            <div class="project-content-alt">
+                <p>A simple game in the style of Atari's Breakout written in C++ using OpenGL, SFML, and object-oriented programming.</p>
+                <img src="https://raw.githubusercontent.com/jpetersen5/jpetersen5.github.io/main/src/images/bricked%20preview.png" alt="Bricked Preview">
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Placeholder</p>
+        <div class="social-icons">
+            <a href="mailto:jasonpetersen707@gmail.com" target="_blank"><i class="fas fa-envelope"></i><span class="username"> jasonpetersen707@gmail.com</span></a>
+            <a href="https://github.com/jpetersen5" target="_blank"><i class="fab fa-github"></i><span class="username"> jpetersen5</span></a>
+            <a href="https://linkedin.com/in/jason-t-petersen" target="_blank"><i class="fab fa-linkedin"></i><span class="username"> jason-t-petersen</span></a>
+        </div>
     </section>
 
     <footer>
         <p>Copyright &copy; 2023 Jason Petersen</p>
     </footer>
+
+    <script src="source.js"></script>
 </body>
 </html>
